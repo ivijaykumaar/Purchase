@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.atomsystems.mysql.MainActivity">
+
+<TableRow>
+    <TextView
+        android:id="@+id/productname_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="product_name"
+        android:textSize="15sp"
+        android:padding="15dp"/>
+
+    <EditText
+        android:id="@+id/productname_edittext"
+        android:layout_width="wrap_content"
+        android:textSize="15dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter Your Product"
+        android:padding="15dp"/>
+
+
+</TableRow>
+    <TableRow>
+    <TextView
+        android:id="@+id/productquantity_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quantity"
+        android:textSize="15dp"
+        android:padding="15dp"/>
+
+    <EditText
+        android:id="@+id/quantity_edittext"
+        android:layout_width="wrap_content"
+        android:textSize="15dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter Quantity"
+        android:padding="15dp"/>
+
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:id="@+id/price_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price"
+            android:textSize="15dp"
+            android:padding="15dp"/>
+
+
+        <EditText
+            android:id="@+id/price_edittext"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:hint="Enter the Price"
+            android:padding="15dp"/>
+
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:id="@+id/id_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Id"
+            android:textSize="15dp"
+            android:padding="15dp"/>
+
+
+        <EditText
+            android:id="@+id/id_edittext"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:hint="Enter Your Id"
+            android:padding="15dp"/>
+
+    </TableRow>
+
+    <TableRow android:layout_width="wrap_content"
+        android:padding="15dp"
+       android:weightSum="2">
+
+        <Button
+            android:id="@+id/add_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add"
+            android:layout_weight="1"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+        <Button
+            android:id="@+id/View_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ViewAll"
+            android:layout_weight="2"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+    </TableRow>
+
+    <TableRow
+        android:weightSum="3"
+        android:padding="15dp">
+
+        <Button
+            android:id="@+id/delete_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete"
+            android:layout_weight="1"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+        <Button
+            android:id="@+id/deleteall_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DeleteAll"
+            android:layout_weight="2"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+        <Button
+            android:id="@+id/update_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update"
+            android:layout_weight="3"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+    </TableRow>
+
+</TableLayout>
